@@ -1,7 +1,7 @@
 import React from 'react'
 import SmallItems from './SmallItems'
 import { useStateContext } from '../context/StateContext'
-import {AiOutlineShopping,AiOutlineShoppingCart} from 'react-icons/ai'
+import {AiOutlineShopping,AiOutlineShoppingCart,AiOutlineClose} from 'react-icons/ai'
 
 
 
@@ -11,9 +11,10 @@ const ChartList = () => {
     <div>
       <ul className="menu p-4 w-fit bg-base-100 text-base-content h-full overflow-scroll">
         <li>
-          <div className='flex text-sm'>
+          <div className='flex text-sm justify-between'>
             <span>Your Card</span>
             <h1>({totalQuantities} items)</h1>
+            <label htmlFor="my-drawer-4" className="drawer-button btn btn-ghost rounded-full relative"><AiOutlineClose/></label>
           </div>
         </li>
         {cartItems.length < 1 && (
