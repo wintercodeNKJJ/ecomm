@@ -49,7 +49,7 @@ const Ditails = ({ Data }) => {
               <button className="btn btn-sm" onClick={incQty}><AiOutlinePlus /></button>
             </div>
           </div>
-          <div className="flex justify-start gap-10 mt-8">
+          <div className="flex flex-col md:flex-row justify-start gap-10 mt-8">
             <button className="btn btn-md rounded-box w-52 flex gap-4" onClick={() => onAdd(Data, qty)}>Add to chart<AiOutlineShoppingCart size={25} /></button>
             <button className="btn btn-md rounded-box w-52 bg-red-500 border-none flex gap-4 hover:text-red-500">Buy now <AiOutlineShopping size={25} /></button>
           </div>
