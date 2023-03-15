@@ -12,8 +12,10 @@ const ChartList = () => {
       <ul className="menu p-4 w-fit bg-base-100 text-base-content h-full overflow-scroll">
         <li>
           <div className='flex text-sm justify-between'>
+            <div className='flex gap-1'>
             <span>Your Card</span>
             <h1>({totalQuantities} items)</h1>
+            </div>
             <label htmlFor="my-drawer-4" className="drawer-button btn btn-ghost rounded-full relative"><AiOutlineClose/></label>
           </div>
         </li>
