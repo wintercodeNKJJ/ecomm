@@ -9,7 +9,7 @@ const ChartList = () => {
   const {totalPrice, totalQuantities, cartItems} = useStateContext()
   return (
     <div>
-      <ul className="menu p-4 w-fit bg-base-100 text-base-content h-full overflow-scroll">
+      <ul className="menu p-4 w-fit h-full overflow-scroll bg-gray-200 text-black">
         <li>
           <div className='flex text-sm justify-between'>
             <div className='flex gap-1'>
@@ -23,7 +23,7 @@ const ChartList = () => {
           <div className='flex flex-col justify-center items-center'>
           <AiOutlineShopping size={150}/>
           <h3>Your shopping is empty</h3>
-          <a href="/" className='btn rounded-box bg-red-600 w-60 my-4'>Continue Shopping</a>
+          <a href="/" className='btn rounded-box text-black border-none bg-[#347423] w-60 my-4'>Continue Shopping</a>
           </div>
         )}
         {cartItems.length >=1 && cartItems.map((item)=>(
@@ -38,10 +38,10 @@ const ChartList = () => {
             <div className="flex flex-col w-full">
               <div className="flex justify-between p-2 text-xl font-bold w-full">
                 <span>Subtotal:</span>
-                <span>{totalPrice}frs</span>
+                <span className='border-b-[#347423] w-fit border-b-2'>{totalPrice}frs</span>
               </div>
               <div className="mx-2 w-full">
-                <button className="rounded-box bg-red-500 btn btn-md w-full flex gap-4">PAY WITH STRIPE<AiOutlineShoppingCart size={25}/></button>
+                <button className="rounded-box bg-[#347423] border-none btn btn-md w-full flex gap-4">PAY WITH STRIPE<AiOutlineShoppingCart size={25}/></button>
               </div>
             </div>
           </li>

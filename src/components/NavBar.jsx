@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { useStateContext } from '../context/StateContext'
+import asl from '../assets/ASL.png'
 
 
 const NavBar = () => {
@@ -8,9 +9,10 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="flex justify-between p-2 m-2">
+      <div className="flex justify-between p-2 px-24 bg-[#347423]">
         <div>
-          <a href="/">
+          <a href="/" className='flex items-center gap-2'>
+            <img src={asl} alt="asl" className=' w-12 h-12 object-cover' />
           <h1 className='text-2xl font-bold'>Africa System Shopping</h1>
           </a>
         </div>

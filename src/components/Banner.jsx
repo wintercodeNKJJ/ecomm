@@ -3,17 +3,20 @@ import React from 'react'
 const Banner = () => {
   return (
     <div>
-      <div className="p-2 mx-4 my-2 rounded-box grid grid-cols-2 lg:grid-cols-3 gap-2 bg-gray-400 h-full lg:h-96">
+      <div className="p-2 mx-4 my-2 rounded-box grid grid-cols-2 lg:grid-cols-3 gap-2 bg-[#4d4643] h-full lg:h-96">
         <div className="p-4 flex flex-col justify-between">
           <div className="">
             <div className="font-light mx-4 text-2xl text-white">
               Best Sold
             </div>
+            <div className="text-5xl md:text-8xl font-bold m-2 text-white">
+              Nice
+            </div>
             <div className="text-7xl md:text-9xl font-bold m-2 text-white">
               Product
             </div>
           </div>
-          <div className="btn btn-accent rounded-full m-2"> Buy Product </div>
+          <div className="btn bg-[#347423] border-none rounded-full m-2"> Buy Product </div>
         </div>
         <div className="col-span-1">
           <div className="flex justify-end items-center h-full w-full">
@@ -28,8 +31,7 @@ const Banner = () => {
             </div>
             <div className="font-light text-justify text-white">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempora. Quidem commodi vitae, eligendi
-                ipsam veritatis necessitatibus, accusantium nam nisi perferendis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempora.
               </p>
             </div>
           </div>

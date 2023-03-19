@@ -9,7 +9,7 @@ const Ditails = ({ Data }) => {
   return (
     <div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 p-2 m-2 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 p-2 m-2 gap-3 text-black">
         <div className="grid grid-cols-4 gap-2">
           <div className="col-span-4">
             <img src={require("../assets/imges2/banner.jpeg")} alt="item" className="h-72 w-full object-cover rounded-box" />
@@ -50,13 +50,13 @@ const Ditails = ({ Data }) => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-start gap-10 mt-8">
-            <button className="btn btn-md rounded-box w-52 flex gap-4" onClick={() => onAdd(Data, qty)}>Add to chart<AiOutlineShoppingCart size={25} /></button>
-            <button className="btn btn-md rounded-box w-52 bg-red-500 border-none flex gap-4 hover:text-red-500">Buy now <AiOutlineShopping size={25} /></button>
+            <button className="btn btn-md bg-[#347423] hover:text-[#347423] border-none rounded-box w-52 flex gap-4" onClick={() => onAdd(Data, qty)}>Add to chart<AiOutlineShoppingCart size={25} /></button>
+            <button className="btn btn-md rounded-box w-52 bg-[#4d4643] border-none flex gap-4 hover:text-red-500">Buy now <AiOutlineShopping size={25} /></button>
           </div>
         </div>
       </div>
 
-      <div className="flex gap-3 flex-col justify-center items-center text-3xl font-bold my-8">
+      <div className="flex gap-3 flex-col justify-center items-center text-3xl font-bold my-8 text-black">
         <div>You May also Like</div>
       </div>
 

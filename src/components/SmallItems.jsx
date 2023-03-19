@@ -16,7 +16,7 @@ const SmallItems = ({item}) => {
                 </span>
               </div>
               <div className="flex flex-col justify-between mx-1 h-36">
-                <span className="text-2xl">{item.price}frs</span>
+                <span className="text-2xl border-b-[#347423] w-fit border-b-2">{item.price}frs</span>
                 <div className="input-group">
                   <button className="btn btn-sm" onClick={()=>toggleCartItemQuantity(item.id, 'dec')}><AiOutlineMinus/></button>
                   <span className="bg-gray-300 w-10 text-black">{item.quantity}</span>
